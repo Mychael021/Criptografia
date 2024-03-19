@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="styles/style.css" >
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+</head>
+<body>
+    
+    <header class="cabecalho">
+                    <img src="img/logo.png" alt="logomarca">
+            <div class="cabecalho__area">
+                <span class="cabecalho__area__titulo">
+                    <h1 class="cabecalho__area__titulo__destaque">Criptografia</h1>
+                </span>
+            </div>
+     </header>
+
+   
+    <main class="conteudo">
+        <section class="conteudo__entradas">
+            <textarea id="entrada-de-texto" class="conteudo__entradas__texto" placeholder="Digite seu Texto"></textarea>
+            <div class="conteudo__entradas__click">
+                <span class="conteudo__entradas__click__aviso">
+                    <img src="assets/exclamação.png" alt="imagem exclamação" id="image-exclamacao">
+                    <h6>Apenas letras minúsculas e sem acento.</h6>
+                </span>
+                <div class="conteudo__entradas__click__botoes">
+                <button onclick="criptografar()" type="button" class="conteudo__entradas__click__botoes__botao">Criptografar</button>
+                <button onclick="descriptografar()" type="button" class="conteudo__entradas__click__botoes__botao">Descriptografar</button>
+                </div>
+            </div>
+        </section >
+        
+        <div class="conteudo__saida">
+            <div class="conteudo__saida__mensagem" id="mensagem-saida">
+            </div>
+                <output id="texto-codificado" class="conteudo__saida__texto">
+                </output>
+            <div class="conteudo__saida__apresentacao" id="texto-do-output">
+                <h4 class="conteudo__saida__apresentacao__titulo">Nenhuma mensagem encontrada</h4>
+                <h5 class="conteudo__saida__apresentacao__paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</h5>
+            </div>
+
+            <button onclick="copiar()" type="button" class="conteudo__saida__botao" id="botao-copiar" disabled >Copiar</button>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <h1 class="rodape__titulo">Desenvolvido por Mychael Silva Reis</h1>
+        <section class="rodape__secao">
+            <a class="rodape__secao__links" href="https://www.linkedin.com/in/iagocabo/">
+                <img src="assets/linkedin.png" alt="imagem linkedin">
+                Linkedin
+            </a>
+            <a class="rodape__secao__links" href="https://github.com/IagoCabo">
+                <img src="assets/github.png" alt="imagem github">
+                Github
+            </a>
+            <a class="rodape__secao__links" href="https://instagram.com/iago_Cabo">
+                <img src="assets/instagram.png" alt="imagem instagram">
+                Instagram
+            </a>
+        </section>
+    </footer>
+    
+</body>
+<script src="main/main.js"> </script>
+</html>
